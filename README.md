@@ -1,28 +1,63 @@
-\# 🎓 TechMentor - AI Study Companion
+# TechMentor: RAG-enabled Chatbot Platform
+
+## Problem Statement
+
+Finding accurate, context-relevant answers from large collections of internal or domain-specific documents is inefficient with standard keyword search or generic chatbots. This platform addresses the challenge of making your own knowledge base, PDF files, or proprietary content “chat-friendly,” providing precise, context-aware responses.
+
+## Solution
+
+TechMentor is a Retrieval-Augmented Generation (RAG) chatbot system that ingests PDFs and other text documents, converts them into searchable chunks, and leverages modern LLMs to answer user queries based on this content. This approach blends powerful context retrieval with generative AI for reliable, document-grounded answers.
 
 
+## YouTube Video(Explaination of my project):
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
 
-An intelligent Q\&A system for Computer Science students using RAG (Retrieval-Augmented Generation).
+## Tech Stack
 
+- **Backend:** FastAPI (Python)
+- **Vector DB:** ChromaDB
+- **Document Embeddings:** OpenAI/Groq
+- **PDF/Text Parsing:** PyPDF2, custom chunker
+- **Frontend:** (To be added; e.g., React, Pure HTML/JS)
+- **API Hosting:** Render
+- **CI/CD:** GitHub Actions (optional, can add later)
+- **Other:** Docker (optional for deployment/containerization)
 
+## How the Pipeline Works
 
-\## Features
+1. **Document Ingestion:** User uploads PDFs or other text documents.
+2. **Chunking & Embedding:** The documents are split into overlapping text chunks, and embeddings are generated using LLM APIs.
+3. **Storage:** Chunk embeddings and metadata are stored in ChromaDB.
+4. **User Query:** User asks a question via API or (future) web UI.
+5. **Similarity Search:** Most relevant document chunks are retrieved using vector similarity search.
+6. **Answer Generation:** The top relevant chunks are passed, with the query, to an LLM for grounded answer generation.
+7. **Response:** The system returns a context-aware answer, referencing the original documents.
 
-\- Instant answers from your PDF study materials
+## What Can Be Added
 
-\- Context-aware responses with source citations
+- User authentication, roles & access control
+- Richer frontend: chat UI with citation highlighting
+- Document upload/download via web interface
+- Support for additional file types (Word, HTML, images with OCR)
+- Analytics/dashboard for usage and performance
+- Advanced settings for chunk size, retrieval methods, re-ranking, or model selection
 
-\- Beautiful space-themed UI
+## Getting Started
 
-\- Covers 8 CS subjects (AI/ML, DBMS, DSA, Networks, OOP, OS, Python, SE)
+1. Clone the repo:
+git clone https://github.com/developwithsupriya/TechMentor-SupriyaMansha-12201247.git
 
+2. Install dependencies:
+pip install -r requirements.txt
 
+3. Run ingestion on your docs:
+python ingest_documents.py
 
-\## Local Setup
+4. Start the server:
+uvicorn main:app --reload
 
+5. Query the API or connect UI.
 
+## Contributing
 
-1\. Install dependencies:
-
-
-
+PRs and feature suggestions are welcome! Please open an issue to discuss changes/ideas.
