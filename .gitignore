@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Environment variables - NEVER PUSH THIS!
+.env
+
+# Database - Will be regenerated on Render
+chroma_db/
+*.db
+*.sqlite3
+
+# Logs
+*.log
+pdf_qa_app.log
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
