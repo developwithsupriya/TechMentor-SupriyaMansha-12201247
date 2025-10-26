@@ -10,7 +10,7 @@ TechMentor is a Retrieval-Augmented Generation (RAG) chatbot system that ingests
 
 
 ## YouTube Video(Explaination of my project):
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=https://youtu.be/C-nPYUa3qEc)
+https://youtu.be/C-nPYUa3qEc
 
 ## Tech Stack
 
