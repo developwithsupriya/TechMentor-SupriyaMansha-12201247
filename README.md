@@ -18,10 +18,10 @@ TechMentor is a Retrieval-Augmented Generation (RAG) chatbot system that ingests
 - **Vector DB:** ChromaDB
 - **Document Embeddings:** OpenAI/Groq
 - **PDF/Text Parsing:** PyPDF2, custom chunker
-- **Frontend:** (To be added; e.g., React, Pure HTML/JS)
-- **API Hosting:** Render
-- **CI/CD:** GitHub Actions (optional, can add later)
-- **Other:** Docker (optional for deployment/containerization)
+- **Frontend:** ( Pure HTML/JS)
+- **API Hosting:** Render(tried but failed to deploy)
+- **CI/CD:** GitHub Actions 
+
 
 ## How the Pipeline Works
 
